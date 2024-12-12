@@ -55,7 +55,8 @@
      object-fit: contain;
 
  }
-
+.w3-display-left,
+.w3-display-right,
  .w3-left,
  .w3-right,
  .w3-badge {

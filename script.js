@@ -1,3 +1,34 @@
+//card projetos
+var slideIndexCard = 1;
+console.log(showCardDivs);
+showCardDivs(slideIndexCard);
+
+
+function plusCardDivs(n) {
+    showCardDivs(slideIndexCard += n);
+}
+
+function currentCardDiv(n) {
+    showCardDivs(slideIndexCard = n);
+}
+
+function showCardDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlidesCard");
+    var dots = document.getElementsByClassName("card-demo");
+    if (n > x.length) { slideIndexCard = 1 }
+    if (n < 1) { slideIndexCard = x.length }
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" w3-black", "");
+    }
+    x[slideIndexCard - 1].style.display = "block";
+    dots[slideIndexCard - 1].className += " w3-black";
+}
+
+
 //Slides projetos web
 var slideIndex = 1;
 showDivs(slideIndex);
@@ -52,31 +83,4 @@ function showDivs1(n) {
     }
     x[slideIndex1 - 1].style.display = "block";
     dots[slideInde1x - 1].className += " w3-white";
-}
-//card projetos
-var slideIndexCard = 1;
-showCardDivs(slideIndexCard);
-
-function plusCardDivs(n) {
-    showCardDivs(slideIndexCard += n);
-}
-
-function currentCardDiv(n) {
-    showCardDivs(slideIndexCard = n);
-}
-
-function showCardDivs(n) {
-    var i;
-    var x = document.getElementsByClassName("w3-card");
-    var dots = document.getElementsByClassName("card-demo");
-    if (n > x.length) { slideIndexCard = 1 }
-    if (n < 1) { slideIndexCard = x.length }
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" w3-black", "");
-    }
-    x[slideIndexCard - 1].style.display = "block";
-    dots[slideIndexCard - 1].className += " w3-black";
 }
