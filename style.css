@@ -1,4 +1,4 @@
- body {
+ /*body {
      background: linear-gradient(-45deg, #e73c7e, #6d0f74, #192aa4, #070267);
      background-size: 400% 400%;
      animation: gradient 15s ease infinite;
@@ -19,6 +19,8 @@
          background-position: 0% 50%;
      }
  }
+*/
+ 
 
  .item_nav {
      height: 100%;
@@ -55,8 +57,9 @@
      object-fit: contain;
 
  }
-.w3-display-left,
-.w3-display-right,
+
+ .w3-display-left,
+ .w3-display-right,
  .w3-left,
  .w3-right,
  .w3-badge {
@@ -73,5 +76,3 @@
  ul {
      text-align: justify;
  }
-
-  

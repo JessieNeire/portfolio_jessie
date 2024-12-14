@@ -29,7 +29,7 @@ function showCardDivs(n) {
 }
 
 
-//Slides projetos web
+//Slides conpac
 var slideIndex = 1;
 showDivs(slideIndex);
 
@@ -57,7 +57,7 @@ function showDivs(n) {
     dots[slideIndex - 1].className += " w3-white";
 }
 
-// projetos app
+// pag etec
 var slideIndex1 = 1;
 showDivs1(slideIndex1);
 
@@ -66,7 +66,7 @@ function plusDivs1(n) {
 }
 
 function currentDiv1(n) {
-    showDivs(slideIndex1 = n);
+    showDivs1(slideIndex1 = n);
 }
 
 function showDivs1(n) {
@@ -82,5 +82,5 @@ function showDivs1(n) {
         dots[i].className = dots[i].className.replace(" w3-white", "");
     }
     x[slideIndex1 - 1].style.display = "block";
-    dots[slideInde1x - 1].className += " w3-white";
+    dots[slideIndex1 - 1].className += " w3-white";
 }
