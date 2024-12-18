@@ -76,3 +76,23 @@
  ul {
      text-align: justify;
  }
+
+ .contact-info {
+     padding: 32px;
+     background-color: #000000;
+ }
+
+ .contact-icons {
+     font-size: 24px;
+     margin: 16px;
+ }
+
+ .contact-link {
+     margin: 16px;
+     text-decoration: none;
+     color: rgb(248, 245, 245);
+ }
+
+ .contact-link:hover {
+     color: #0073e6;
+ }
