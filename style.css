@@ -1,39 +1,131 @@
  body {
-     background: linear-gradient(-45deg, #e73c7e, #6d0f74, #192aa4, #070267);
-     background-size: 400% 400%;
-     animation: gradient 15s ease infinite;
+     font-family: sans-serif, Arial;
+     background-color: #110a15;
+     color: aliceblue;
      height: 100vh;
      margin: 0;
  }
 
- @keyframes gradient {
-     0% {
-         background-position: 0% 50%;
-     }
 
-     50% {
-         background-position: 100% 50%;
-     }
+ 
 
-     100% {
-         background-position: 0% 50%;
-     }
+ main {
+     width: 65%;
+     height: auto;
+     border-radius: 10px;
+     /*background-color: rgb(18, 17, 17);*/
+
+     padding: 30px;
+     margin: 70px auto auto auto;
+
+ }
+
+ h1 {
+     text-align: center;
+ }
+
+ p {
+     font-size: 0.9em;
+     line-height: 1.5;
+    text-indent: 30px;
+ }
+
+ .titulo span {
+    
+     font-size: 2.5rem;
+     background: linear-gradient(to right, #690ed8,#b406d7,#ee0ed7);
+    background-size: 180% 180%;
+     -webkit-background-clip: text;
+    background-clip: text;
+     color: transparent;
+     font-weight: 700;
+     animation: gradientDance 3s ease infinite;
+ }
+
+ @keyframes gradientDance {
+    0% {
+            background-position: 0% 50%;
+        }
+    
+        25% {
+            background-position: 50% 50%;
+        }
+    
+        50% {
+            background-position: 100% 50%;
+        }
+    
+        75% {
+            background-position: 50% 50%;
+        }
+    
+        100% {
+            background-position: 0% 50%;
+        }
+ }
+ .neon{
+    font-size: 3em;
+        background: linear-gradient(to right, #690ed8, #b406d7, #ee0ed7);
+        background-size: 200% 200%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        font-weight: 700;
+        animation: gradientDance 3s ease infinite;
+        text-align: center;
+    padding: 15px;
+   
+        
+    
+ }
+
+ .container {
+     display: flex;
+     align-items: center;
+ }
+
+ .imagem,
+ .sobre {
+     flex: 1;
+
  }
 
  
 
- .item_nav {
-     height: 100%;
+ .foto {
+     width: 50%;
+     height: auto;
+     border-radius: 50%;
+     margin-left: 110px;
+     padding-top: 0;
 
  }
 
- .foto {
-     width: 350px;
-     height: 350px;
-     border-radius: 50%;
-     overflow: hidden;
-     object-fit: cover;
-     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+ .contatos-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 7px;
+     margin-top: 30px;
+     margin-bottom: 0;
+   width: 95%;
+ }
+
+ .contatos-button a {
+    flex: 1;
+     padding: 10px 2px;
+     font-size: 0.7em;
+     color: #fff;
+     text-align: center;
+     background-color: #e200e6;
+     text-decoration: none;
+     border-radius: 10px;
+     transition: background-color 0.3s;
+      
+ }
+
+ .contatos-button a:hover {
+     background-color: #5f00b3;
  }
 
  .w3-padding-128 {
@@ -78,21 +170,58 @@
  }
 
  .contact-info {
+    margin-top: 50px;
      padding: 32px;
-     background-color: #000000;
+    background-color: rgb(9, 9, 9);
  }
 
  .contact-icons {
      font-size: 24px;
-     margin: 16px;
+     margin: 5px;
+    padding: 5px;
+        border: 2px solid #690ed8;
+        border-radius: 5px;
+        color:#690ed8;
  }
 
- .contact-link {
-     margin: 16px;
-     text-decoration: none;
-     color: rgb(248, 245, 245);
- }
 
- .contact-link:hover {
+
+ .contact-icons:hover {
      color: #0073e6;
+     border-color: #0073e6;
+    
  }
+ nav {
+     background-color: black;
+     height: 40px;
+     display: flex;
+ }
+
+ .item_nav_right {
+     margin-left: auto;
+     display: flex;
+     gap: 5px;
+ }
+
+ nav a {
+     display: inline-block;
+     padding: 10px;
+     text-decoration: none;
+     color: white;
+ }
+
+ nav a:hover {
+     background-color: #3e0675;
+ }
+
+ @media (max-width: 600px) {
+     nav a {
+         display: block;
+         text-align: center;
+     }
+
+     .w3-container {
+         width: 90%;
+     }
+ }
+ 

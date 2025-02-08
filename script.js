@@ -22,10 +22,10 @@ function showCardDivs(n) {
         x[i].style.display = "none";
     }
     for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" w3-black", "");
+        dots[i].className = dots[i].className.replace(" w3-white", "");
     }
     x[slideIndexCard - 1].style.display = "block";
-    dots[slideIndexCard - 1].className += " w3-black";
+    dots[slideIndexCard - 1].className += " w3-white";
 }
 
 

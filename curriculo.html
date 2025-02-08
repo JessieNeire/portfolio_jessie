@@ -12,46 +12,45 @@
 </head>
 
 <body>
-    <nav class="w3-bar w3-mobile w3-top w3-center w3-black" style="height: 50px;">
-        <a href="index.html" class="item_nav w3-bar-item w3-button w3-left w3-hover-pink"><b>Jéssie Neire da Silva
-                Santos</b></a>
-        <a href="#contato" class="item_nav w3-bar-item w3-button w3-right w3-hover-pink"><b>Contato</b></a>
-        <a href="curriculo.html" class="item_nav w3-bar-item w3-button w3-right w3-hover-pink"><b>Currículo</b></a>
-        <a href="projetos_web.html" class="item_nav w3-bar-item w3-button w3-right w3-hover-pink"><b>Projetos
-                web</b></a>
-        <a href="projetos_android.html" class="item_nav w3-bar-item w3-button w3-right w3-hover-pink"><b>Projetos
-                Android</b></a>
+    <nav class="barra_nav">
+        <a href="index.html" class="item_nav_left"><b>Jéssie Neire da Silva Santos</b></a>
+        <div class="item_nav_right">
+            <a href="projetos_web.html"><b>Projetos web</b></a>
+            <a href="projetos_android.html"><b>Projetos Android</b></a>
+            <a href="curriculo.html"><b>Currículo</b></a>
+            <a href="curriculo.html#contato"><b>Contato</b></a>
+        </div>
     </nav>
-    <div class="w3-container w3-padding-32" id="curriculo">
 
-        <div class="w3-content w3-card w3-padding w3-round-xxlarge w3-text-black"
-            style="background-color: rgb(255, 255, 255); margin-top:50px;">
-            <h3 class="w3-center"><b>Visualizar Currículo</b></h3>
+    <main class="main">
+        <section id="curriculo" class="w3-content w3-card w3-padding w3-round-xxlarge w3-text-black"
+            style="background-color: rgb(255, 255, 255); ">
+            <h3 class="neon"><b>Visualizar Currículo</b></h3>
 
             <div class="w3-center">
                 <embed src="doc/CV_Jessie_Neire_2025.pdf" type="application/pdf" width="100%" height="600px" />
             </div>
 
-        </div>
-    </div>
-    
-    <div class="w3-container w3-padding-128 contact-info w3-text-white" id="contato">
-        <div class="w3-content">
-            <h2 class="w3-center"><b>Contato</b></h2>
+        </section>
+
+        <section class="w3-container contact-info w3-text-white" id="contato">
+            <h3 class="neon"><b>Contato</b></h3>
             <p class="w3-center"><em>Conecte-se comigo através dos canais abaixo!</em></p>
-            <div class="w3-center w3-padding-64 w3-large">
+            <div class="w3-center w3-padding-32 w3-large">
 
                 <a href="mailto:jessie.neire@gmail.com" class="contact-link">
-                    <i class="fa fa-envelope contact-icons"></i> jessie.neire@gmail.com </a>
-                <a href="tel:+5511930772985" class="contact-link"> <i class="fa fa-phone contact-icons"></i> +55 (11)
-                    93077-2985 </a>
+                    <i class="fa fa-envelope contact-icons"></i></a>
+                <a href="tel:+5511930772985" class="contact-link">
+                    <i class="fa fa-whatsapp contact-icons"></i></a>
                 <a href="https://www.linkedin.com/in/jessieneire" class="contact-link" target="_blank">
-                    <i class="fa fa-linkedin contact-icons"></i> LinkedIn </a>
+                    <i class="fa fa-linkedin contact-icons"></i></a>
                 <a href="https://github.com/seuperfil" class="contact-link" target="_blank">
-                    <i class="fa fa-github contact-icons"></i> GitHub </a>
+                    <i class="fa fa-github contact-icons"></i></a>
             </div>
-        </div>
-    </div>
+
+        </section>
+
+    </main>
 </body>
 
 </html>

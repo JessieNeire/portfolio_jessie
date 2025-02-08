@@ -6,59 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Portfólio Jéssie Neire</title>
 </head>
 
-<body class="w3-black">
-    <nav class="w3-bar w3-mobile w3-top w3-center w3-black" style="height: 50px;">
-        <a href="index.html" class="item_nav w3-bar-item w3-button w3-left w3-hover-pink"><b>Jéssie Neire da Silva
-                Santos</b></a>
-        <a href="curriculo.html#contato" class="item_nav w3-bar-item w3-button w3-right w3-hover-pink"><b>Contato</b></a>
-        <a href="curriculo.html" class="item_nav w3-bar-item w3-button w3-right w3-hover-pink"><b>Currículo</b></a>
-        <a href="projetos_web.html" class="item_nav w3-bar-item w3-button w3-right w3-hover-pink"><b>Projetos
-                web</b></a>
-        <a href="projetos_android.html" class="item_nav w3-bar-item w3-button w3-right w3-hover-pink"><b>Projetos
-                Android</b></a>
+<body>
+    <nav class="barra_nav">
+        <a href="index.html" class="item_nav_left"><b>Jéssie Neire da Silva Santos</b></a>
+        <div class="item_nav_right">
+            <a href="projetos_web.html"><b>Projetos web</b></a>
+            <a href="projetos_android.html"><b>Projetos Android</b></a>
+            <a href="curriculo.html"><b>Currículo</b></a>
+            <a href="curriculo.html#contato"><b>Contato</b></a>
+        </div>
     </nav>
 
-    <div class="w3-container w3-display-middle w3-round-xxlarge w3-black w3-mobile" id="home" style="width: 70%;margin-top:35px;">
-        <div class="w3-container w3-row-cell">
-            <h1 class="w3-center"><b>Olá! Me chamo Jéssie Neire</b></h1><br>
-            <div class="w3-half" style="width: 40%;">
+    <main class="main">
+        <h1 class="titulo"><b>Olá! Me chamo <span>Jéssie Neire</span></b></h1><br>
+        <section class="container" id="home">
+
+            <div class="imagem">
                 <img src="img/jessie.jpeg" class="foto">
-                <div style="margin-top: 15%;">
-                    <a href="https://www.linkedin.com/in/JessieNeire" target="_blank"
-                        class="w3-button w3-blue w3-round-xlarge">Linkedin</a>
-                    <a href="https://www.github.com/JessieNeire" target="_blank" class="w3-button w3-round-xlarge"
-                        style="background-color: rgb(82, 6, 122);">Github</a>
-                    <a href="https://wa.me/5511970972650"target="_blank" class=" w3-button w3-green w3-round-xlarge">WhatsApp</a>
-                    <a href="mailto:jessie.neire@gmail.com" target="_blank" class=" w3-button w3-red w3-round-xlarge">E-mail</a>
+                <div class="contatos-button">
+                    <a href="curriculo.html#contato" class="botao-contato"><b>Contato</b></a>
+                    <a href="curriculo.html" class="botao-curriculo"><b>Currículo</b></a>
+                    <a href="projetos_web.html" class="botao-web"><b>Projetos Web</b></a>
+                    <a href="projetos_android.html" class="botao-android"><b>Projetos Android</b></a>
                 </div>
 
             </div>
-            <div class="w3-rest">
-                <p>Sou estudante de Engenharia da Computação, com formação técnica em Desenvolvimento de Sistemas. Ao
+            <div class="sobre">
+                <p>Sou estudante de Engenharia da Computação, com formação técnica em Desenvolvimento de Sistemas.
+                    Ao
                     longo da minha trajetória acadêmica, tive a oportunidade de explorar diversos conceitos e
-                    tecnologias, como programação em Java, JavaScript, HTML, CSS, PHP, além de trabalhar com ferramentas
-                    como Git, GitHub e GitHub Desktop. Além disso, possuo experiência prática com Banco de Dados MySQL,
+                    tecnologias, como programação em Java, JavaScript, HTML, CSS, PHP, além de trabalhar com
+                    ferramentas
+                    como Git, GitHub e GitHub Desktop. Além disso, possuo experiência prática com Banco de Dados
+                    MySQL,
                     APIs e metodologias ágeis como o SCRUM.</p>
-                <p>Durante meu percurso, desenvolvi projetos acadêmicos significativos, como aplicativos no Kodular e
-                    soluções web, que me permitiram aplicar meu conhecimento em ambientes de desenvolvimento reais.
-                    Também adquiri uma introdução ao trabalho com Arduino, ampliando minhas habilidades em programação
-                    de hardware.</p>
-                <p>Embora ainda não tenha experiência profissional formal, meus projetos acadêmicos refletem minha
+                <p> Embora ainda não tenha experiência profissional na área, meus projetos acadêmicos refletem minha
                     dedicação e capacidade de aprender novas tecnologias. Busco constantemente aprimorar meus
                     conhecimentos e estou ansiosa para enfrentar novos desafios na área da tecnologia.</p>
-                <p>No meu portfólio, você encontrará uma descrição detalhada e imagens dos projetos que desenvolvi, que
+                <p> No meu portfólio, você encontrará uma descrição detalhada e imagens dos projetos que desenvolvi,
+                    que
                     demonstram meu aprendizado e evolução ao longo do tempo.</p>
 
             </div>
-        </div>
-    </div>
+        </section>
 
-    
+
+    </main>
 
 </body>
 
