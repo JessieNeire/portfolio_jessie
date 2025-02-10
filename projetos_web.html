@@ -13,27 +13,30 @@
 </head>
 
 <body>
-    <nav class="w3-bar">
-        <a href="index.html" class="item_nav_left w3-bar-item"><b>Jéssie Neire da Silva Santos</b></a>
-        <a href="curriculo.html#contato" class="w3-bar-item w3-right"><b>Contato</b></a>
-        <a href="curriculo.html" class="w3-bar-item w3-right"><b>Currículo</b></a>
-        <a href="projetos_android.html" class="w3-bar-item w3-right"><b>Projetos Android</b></a>
-        <a href="projetos_web.html" class="w3-bar-item w3-right"><b>Projetos web</b></a>
+    <nav class="barra_nav">
+        <a href="index.html" class="item_nav_left"><b>Jéssie Neire da Silva Santos</b></a>
+        <div class="item_nav_right">
+            <a href="projetos_web.html" id="web"><b>Projetos web</b></a>
+            <a href="projetos_android.html" id="android"><b>Projetos Android</b></a>
+            <a href="curriculo.html"><b>Currículo</b></a>
+            <a href="curriculo.html#contato"><b>Contato</b></a>
+        </div>
     </nav>
 
     <main class="main" id="projetos_web">
         <h1 class="neon"><b><i class="fa fa-globe"></i> PROJETOS WEB</b></h1>
 
-        <section class="mySlidesCard container w3-content w3-display-container w3-card w3-padding w3-round-xxlarge w3-text-white"
-            id="conpac" >
-            <div class="w3-half w3-padding" >
-                <h2 style="color: blue;"><b>Conpac</b></h2>
+        <section
+            class="mySlidesCard container w3-content w3-display-container w3-card w3-padding w3-round-xxlarge w3-text-white"
+            id="conpac">
+            <div class="w3-half w3-padding">
+                <h2 ><b>Conpac</b></h2>
                 <p>Conpac é um sistema web para gerenciamento de entregas para condomínios. A portaria recebe a entrega
                     do morador, cadastra no sistema e automaticamente é enviado uma mensagem para o morador via
                     WhatsApp, avisando que sua entrega chegou. O sistema é acesso por meio de login e senha, e o morador
                     pode acessa e verificar seu pacote onde quer que esteja, sem a necessidade de esperar chegar em casa
                     para saber se sua tão esperada entrega chegou.</p>
-                <h6><b style="color: blue;">Tecnologias utilizadas:</b>
+                <h6><b >Tecnologias utilizadas:</b>
                     <ul>
                         <li><b>Linguagens de Programação:</b> HTML, CSS, JS, PHP, SQL</li>
                         <li><b>Frameworks:</b> W3CSS, jQuery</li>
@@ -70,8 +73,7 @@
                     </div>
                 </div>
                 <div class="w3-center">
-                    <a href="https://github.com/JessieNeire/TCC_CONPAC" target="_blank"
-                        class="w3-button w3-round-xlarge" style="background-color: rgb(82, 6, 122);">Github</a>
+
                     <a href="https://youtu.be/9oAf8iCaYuU" target="_blank"
                         class="w3-button w3-red w3-round-xlarge">Apresentação</a>
                 </div>
@@ -80,9 +82,9 @@
 
         <section
             class="mySlidesCard w3-container w3-content w3-display-container w3-card w3-padding w3-round-xxlarge w3-text-white"
-            id="pag_etec" style="width: 100%; background-color: rgb(9, 9, 9);">
-            <div class="w3-half w3-padding" style="width: 480px;">
-                <h2 style="color: blue;"><b>Curso de DS</b></h2>
+            id="pag_etec">
+            <div class="w3-half w3-padding" >
+                <h2><b>Curso de DS</b></h2>
                 <p>Este projeto consiste no desenvolvimento de uma página web para o curso de Técnico em Desenvolvimento
                     de Sistemas na
                     instituição ETEC. O objetivo do projeto foi fornecer uma plataforma informativa e acessível para
@@ -90,7 +92,7 @@
                     interessados no curso, destacando informações importantes como o corpo docente, a matriz curricular,
                     os dados de
                     contato, entre outros.</p>
-                <h6><b style="color: blue;">Tecnologias utilizadas:</b>
+                <h6><b>Tecnologias utilizadas:</b>
                     <ul>
                         <li><b>Linguagens de Programação:</b> HTML, CSS, JavaScript</li>
                         <li><b>Frameworks:</b> W3CSS</li>

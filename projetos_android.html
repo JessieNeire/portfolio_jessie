@@ -13,28 +13,30 @@
 </head>
 
 <body>
-    <nav class="w3-bar">
-        <a href="index.html" class="item_nav_left w3-bar-item"><b>Jéssie Neire da Silva Santos</b></a>
-        <a href="curriculo.html#contato" class="w3-bar-item w3-right"><b>Contato</b></a>
-        <a href="curriculo.html" class="w3-bar-item w3-right"><b>Currículo</b></a>
-        <a href="projetos_android.html" class="w3-bar-item w3-right"><b>Projetos Android</b></a>
-        <a href="projetos_web.html" class="w3-bar-item w3-right"><b>Projetos web</b></a>
+    <nav class="barra_nav">
+        <a href="index.html" class="item_nav_left"><b>Jéssie Neire da Silva Santos</b></a>
+        <div class="item_nav_right">
+            <a href="projetos_web.html" id="web"><b>Projetos web</b></a>
+            <a href="projetos_android.html" id="android"><b>Projetos Android</b></a>
+            <a href="curriculo.html"><b>Currículo</b></a>
+            <a href="curriculo.html#contato"><b>Contato</b></a>
+        </div>
     </nav>
 
     <main class="main" id="projetos_android">
         <h1 class="neon"><b><i class="fa fa-android"></i> PROJETOS ANDROID</b></h1>
 
         <section class="mySlidesCard container w3-content w3-display-container w3-card  w3-round-xxlarge w3-text-white"
-            id="conpac">
+            id="jogo_numero">
             <div class="w3-half w3-padding">
-                <h2 style="color: blue;"><b>Jogo Descubra o número</b></h2>
+                <h2 ><b>Jogo Descubra o número</b></h2>
                 <p>"Descubra o Número" é um jogo interativo projetado para testar a capacidade de adivinhação e a
                     estratégia dos jogadores. Este jogo permite que dois jogadores insiram seus nomes e se enfrentem em
                     uma competição
                     amigável para descobrir um número secreto. O objetivo do jogo é adivinhar corretamente o número
                     secreto, com dicas de "maior" ou "menor" ajudando os jogadores a se aproximarem da resposta correta
                 </p>
-                <h6><b style="color: blue;">Tecnologias utilizadas:</b>
+                <h6><b >Tecnologias utilizadas:</b>
                     <ul>
                         <li><b>Linguagens de Programação:</b> Blocos visuais</li>
                         <li><b>Ferramentas:</b> Kodular e Kodular Companion</li>
@@ -58,16 +60,16 @@
 
         <section
             class="mySlidesCard w3-container w3-content w3-display-container w3-card w3-padding w3-round-xxlarge w3-text-white"
-            id="pag_etec" style="width: 100%; background-color: rgb(9, 9, 9);">
-            <div class="w3-half w3-padding" style="width: 480px;">
-                <h2 style="color: blue;"><b>Jogo da Velha</b></h2>
+            id="jogo_velha">
+            <div class="w3-half w3-padding" >
+                <h2 ><b>Jogo da Velha</b></h2>
                 <p>O "Jogo da Velha" é uma versão digital do clássico jogo de estratégia, desenvolvido na plataforma
                     Kodular. Este jogo foi
                     criado para oferecer uma experiência divertida e desafiadora para dois jogadores, com a adição de um
                     placar para acompanhar a pontuação. O objetivo do jogo é alinhar três de seus marcadores (X ou O) em
                     uma linha reta, seja horizontal, vertical ou diagonal, antes do adversário.
                 </p>
-                <h6><b style="color: blue;">Tecnologias utilizadas:</b>
+                <h6><b >Tecnologias utilizadas:</b>
                     <ul>
                         <li><b>Linguagens de Programação:</b> Blocos visuais</li>
                         <li><b>Ferramentas:</b> Kodular e Kodular Companion</li>
@@ -91,16 +93,16 @@
 
         <section
             class="mySlidesCard w3-container w3-content w3-display-container w3-card w3-padding w3-round-xxlarge w3-text-white"
-            id="pag_etec" style="width: 100%; background-color: rgb(9, 9, 9);">
-            <div class="w3-half w3-padding" style="width: 480px;">
-                <h2 style="color: blue;"><b>Cadastro Usuário</b></h2>
+            id="cadastro">
+            <div class="w3-half w3-padding">
+                <h2 ><b>Cadastro Usuário</b></h2>
                 <p>Este projeto é um sistema de cadastro de usuários, desenvolvido para armazenar e gerenciar
                     informações de usuários
                     utilizando um banco de dados SQLite. O sistema oferece uma interface amigável para registrar,
                     atualizar e excluir dados
                     dos usuários.
                 </p>
-                <h6><b style="color: blue;">Tecnologias utilizadas:</b>
+                <h6><b >Tecnologias utilizadas:</b>
                     <ul>
                         <li><b>Linguagens de Programação:</b> Blocos visuais</li>
                         <li><b>Banco de Dados:</b> SQLite</li>
@@ -122,11 +124,12 @@
             </div>
         </section>
 
+        
         <section
             class="mySlidesCard w3-container w3-content w3-display-container w3-card w3-padding w3-round-xxlarge w3-text-white"
-            id="pag_etec" style="width: 100%; background-color: rgb(9, 9, 9);">
-            <div class="w3-half w3-padding" style="width: 480px;">
-                <h2 style="color: blue;"><b>Pesquisar Endereço</b></h2>
+            id="api_endereco">
+            <div class="w3-half w3-padding">
+                <h2 ><b>Pesquisar Endereço</b></h2>
                 <p>Este aplicativo de pesquisa de endereço, permite que os usuários obtenham informações detalhadas de
                     endereços a partir de um CEP específico. Utilizando uma API para a consulta, o aplicativo oferece
                     uma solução prática e rápida para encontrar endereços completos.O aplicativo é facilita a obtenção
@@ -134,7 +137,7 @@
                     CEP, eliminando a necessidade de buscas manuais demoradas e garantindo dados atualizados e
                     confiáveis.
                 </p>
-                <h6><b style="color: blue;">Tecnologias utilizadas:</b>
+                <h6><b >Tecnologias utilizadas:</b>
                     <ul>
                         <li><b>Linguagens de Programação:</b> Blocos visuais</li>
                         <li><b>API:</b> ViaCEP</li>

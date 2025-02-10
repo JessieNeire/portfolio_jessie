@@ -13,67 +13,73 @@
      margin: 40px auto auto auto;
 
  }
- .home{
-    padding-top: 30px;
+
+ .home {
+     padding-top: 30px;
  }
 
  h1 {
      text-align: center;
  }
+ h6 b, h2{
+    color: rgb(157, 90, 225);
+    
+ }
 
  p {
      font-size: 0.9em;
      line-height: 1.5;
-    text-indent: 30px;
+     text-indent: 30px;
  }
 
  .titulo span {
-    
+
      font-size: 2.5rem;
-     background: linear-gradient(to right, #690ed8,#b406d7,#ee0ed7);
-    background-size: 180% 180%;
+     background: linear-gradient(to right, #690ed8, #b406d7, #ee0ed7);
+     background-size: 180% 180%;
      -webkit-background-clip: text;
-    background-clip: text;
+     background-clip: text;
      color: transparent;
      font-weight: 700;
      animation: gradientDance 3s ease infinite;
  }
 
  @keyframes gradientDance {
-    0% {
-            background-position: 0% 50%;
-        }
-    
-        25% {
-            background-position: 50% 50%;
-        }
-    
-        50% {
-            background-position: 100% 50%;
-        }
-    
-        75% {
-            background-position: 50% 50%;
-        }
-    
-        100% {
-            background-position: 0% 50%;
-        }
+     0% {
+         background-position: 0% 50%;
+     }
+
+     25% {
+         background-position: 50% 50%;
+     }
+
+     50% {
+         background-position: 100% 50%;
+     }
+
+     75% {
+         background-position: 50% 50%;
+     }
+
+     100% {
+         background-position: 0% 50%;
+     }
  }
- .neon{
-    font-size: 3em;
-        background: linear-gradient(to right, #690ed8, #b406d7, #ee0ed7);
-        background-size: 200% 200%;
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
-        font-weight: 700;
-        animation: gradientDance 3s ease infinite;
-        text-align: center;
-    padding: 15px;
-   
-        
-    
+
+ .neon {
+     font-size: 3em;
+     background: linear-gradient(to right, #690ed8, #b406d7, #ee0ed7);
+     background-size: 200% 200%;
+     -webkit-background-clip: text;
+     background-clip: text;
+     color: transparent;
+     font-weight: 700;
+     animation: gradientDance 3s ease infinite;
+     text-align: center;
+     padding: 15px;
+
+
+
  }
 
  .container {
@@ -87,7 +93,7 @@
 
  }
 
- 
+
 
  .foto {
      width: 50%;
@@ -99,17 +105,17 @@
  }
 
  .contatos-button {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 7px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     gap: 7px;
      margin-top: 30px;
      margin-bottom: 0;
-   width: 95%;
+     width: 95%;
  }
 
  .contatos-button a {
-    flex: 1;
+     flex: 1;
      padding: 10px 2px;
      font-size: 0.7em;
      color: #fff;
@@ -118,7 +124,7 @@
      text-decoration: none;
      border-radius: 10px;
      transition: background-color 0.3s;
-      
+
  }
 
  .contatos-button a:hover {
@@ -138,10 +144,12 @@
      left: 10px;
  }
 
- .mySlidesCard{
-    width: 100%;
-    background-color: rgb(9, 9, 9);
+ .mySlidesCard {
+     width: 100%;
+     background-color: rgb(9, 9, 9);
+
  }
+
  .mySlides,
  .mySlides1 {
      display: none;
@@ -169,30 +177,33 @@
  ul {
      text-align: justify;
  }
-#curriculo{
-    background-color: rgb(9, 9, 9);
-}
+
+ #curriculo {
+     background-color: rgb(9, 9, 9);
+ }
+
  .contact-info {
-    margin-top: 50px;
+     margin-top: 50px;
      padding: 32px;
-    background-color: rgb(9, 9, 9);
+     background-color: rgb(9, 9, 9);
  }
 
  .contact-icons {
      font-size: 24px;
      margin: 5px;
-    padding: 5px;
-        border: 2px solid #690ed8;
-        border-radius: 5px;
-        color:#690ed8;
+     padding: 5px;
+     border: 2px solid #690ed8;
+     border-radius: 5px;
+     color: #690ed8;
  }
 
  .contact-icons:hover {
      color: #0073e6;
      border-color: #0073e6;
-    
+
  }
- nav {
+
+ .barra_nav {
      background-color: black;
      height: 40px;
      display: flex;
@@ -204,25 +215,75 @@
      gap: 5px;
  }
 
- nav a {
-     display: inline-block;
+ .barra_nav a {
+     display: inline;
      padding: 10px;
      text-decoration: none;
      color: white;
  }
 
- nav a:hover {
+ .barra_nav a:hover {
      background-color: #3e0675;
  }
 
- @media (max-width: 600px) {
-     nav a {
+
+
+ @media (max-width: 900px) {
+     .barra_nav a {
          display: block;
          text-align: center;
+         justify-content: space-between;
      }
 
-     .container{
-        display: block;
+     .container {
+         display: block;
      }
+
+     main {
+         width: 90%;
+         padding: 20px;
+
+     }
+
+     .titulo span {
+         display: block;
+     }
+
+
+     .item_nav_left,
+     #web,
+     #android {
+         visibility: hidden;
+
+     }
+
+     #web::before {
+         content: 'Web';
+         font-weight: 700;
+         visibility: visible;
+         display: block;
+         position: absolute;
+     }
+
+     #android::before {
+         content: 'Android';
+         font-weight: 700;
+         visibility: visible;
+         display: block;
+         position: absolute;
+     }
+
+     .item_nav_left::before {
+         content: 'Início';
+         font-weight: 700;
+         visibility: visible;
+         display: block;
+         position: absolute;
+     }
+
+     .mySlidesCard {
+         background-color: inherit;
+     }
+
+     
  }
- 
